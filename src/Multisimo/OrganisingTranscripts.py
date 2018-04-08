@@ -9,8 +9,8 @@ import os
 from pandas import ExcelWriter
 from pandas import DataFrame
 
-root_path = "C:/Users/Owner/eclipse-workspace/Multisimo/Multisimo_Data/transcripts_text"
-raw_excel = pd.read_excel('C:/Users/Owner/eclipse-workspace/Multisimo/Multisimo_Data/basic_format.xlsx')
+root_path = "$/Multisimo/Multisimo_Data/transcripts_text"
+raw_excel = pd.read_excel('$/Multisimo/Multisimo_Data/basic_format.xlsx')
 list_IDs = raw_excel['ID'].tolist()
 list_IDs_copy = raw_excel['ID'].tolist()
 files = os.listdir(root_path)
