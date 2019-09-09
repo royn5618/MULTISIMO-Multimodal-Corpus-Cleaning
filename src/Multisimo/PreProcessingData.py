@@ -13,7 +13,7 @@ from pandas import ExcelWriter
                     
 st = StanfordPOSTagger('$/Multisimo/stanford-postagger-2018-02-27/stanford-postagger-2018-02-27/models/english-bidirectional-distsim.tagger'
                        ,path_to_jar='$/Multisimo/stanford-postagger-2018-02-27/stanford-postagger-2018-02-27/stanford-postagger.jar')
-df_proc = pd.read_excel($/Multisimo/Multisimo_Data/Processed_transcripts.xlsx')
+df_proc = pd.read_excel('$/Multisimo/Multisimo_Data/Processed_transcripts.xlsx')
 transcripts = df_proc['test_set'].tolist()
 
 words = set(nltk.corpus.words.words())
